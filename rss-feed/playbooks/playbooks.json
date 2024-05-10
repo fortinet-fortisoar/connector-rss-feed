@@ -1,0 +1,88 @@
+{
+  "type": "workflow_collections",
+  "data": [
+    {
+      "uuid": "555437a8-61b4-435c-a341-542c18402cb3",
+      "@type": "WorkflowCollection",
+      "workflows": [
+        {
+          "@type": "Workflow",
+          "uuid": "b4ef1575-a602-44af-80fc-56b50cbad176",
+          "collection": "/api/3/workflow_collections/555437a8-61b4-435c-a341-542c18402cb3",
+          "steps": [
+            {
+              "uuid": "67cbaba8-709f-41b8-b29f-ebff35e9e8c9",
+              "@type": "WorkflowStep",
+              "name": "Start",
+              "description": null,
+              "status": null,
+              "arguments": {
+                "step_variables": {
+                  "input": {
+                    "params": []
+                  }
+                }
+              },
+              "left": "20",
+              "top": "20",
+              "stepType": "/api/3/workflow_step_types/b348f017-9a94-471f-87f8-ce88b6a7ad62"
+            },
+            {
+              "uuid": "d27cb60f-426a-4907-a813-dd1628b9bc1d",
+              "@type": "WorkflowStep",
+              "name": "Get Indicators",
+              "description": null,
+              "status": null,
+              "arguments": {
+                "name": "RSS Feed",
+                "config": "",
+                "params": {
+                  "url": "https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml"
+                },
+                "version": "1.0.0",
+                "connector": "rss-feed",
+                "operation": "get_indicators",
+                "operationTitle": "Get Indicators"
+              },
+              "left": "188",
+              "top": "120",
+              "stepType": "/api/3/workflow_step_types/0bfed618-0316-11e7-93ae-92361f002671"
+            }
+          ],
+          "triggerLimit": null,
+          "description": "Retrieves the reports from the RSS feed.",
+          "name": "Get Indicators",
+          "tag": "#RSS Feed",
+          "recordTags": [
+            "Rss",
+            "rss-feed"
+          ],
+          "isActive": false,
+          "debug": false,
+          "singleRecordExecution": false,
+          "parameters": [],
+          "synchronous": false,
+          "triggerStep": "/api/3/workflow_steps/67cbaba8-709f-41b8-b29f-ebff35e9e8c9",
+          "routes": [
+            {
+              "uuid": "d8ce7683-a3d6-4449-8726-6c619a62e895",
+              "@type": "WorkflowRoute",
+              "label": null,
+              "isExecuted": false,
+              "name": "Start-> Get Indicators",
+              "sourceStep": "/api/3/workflow_steps/67cbaba8-709f-41b8-b29f-ebff35e9e8c9",
+              "targetStep": "/api/3/workflow_steps/d27cb60f-426a-4907-a813-dd1628b9bc1d"
+            }
+          ]
+        }
+      ],
+      "name": "Sample - RSS Feed - 1.0.0",
+      "description": "An RSS feed, short for Really Simple Syndication, is a standardized format used to publish frequently updated content such as blog posts, news headlines, audio, and video. It allows users to subscribe to their favorite websites and receive updates automatically without having to visit each site individually. RSS feeds contain headlines, summaries, and links to full articles, enabling users to stay informed about new content from multiple sources in one place.",
+      "visible": true,
+      "recordTags": [
+        "RSS",
+        "rss-feed"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,196 @@
+{
+  "name": "rss-feed",
+  "version": "1.0.0",
+  "label": "RSS Feed",
+  "description": "An RSS feed, short for Really Simple Syndication, is a standardized format used to publish frequently updated content such as blog posts, news headlines, audio, and video. It allows users to subscribe to their favorite websites and receive updates automatically without having to visit each site individually. RSS feeds contain headlines, summaries, and links to full articles, enabling users to stay informed about new content from multiple sources in one place.",
+  "publisher": "Fortinet",
+  "cs_approved": true,
+  "cs_compatible": true,
+  "help_online": "",
+  "icon_small_name": "small.png",
+  "icon_large_name": "large.png",
+  "category": "Threat Intelligence",
+  "configuration": {
+    "fields": []
+  },
+  "operations": [
+    {
+      "operation": "get_indicators",
+      "title": "Get Indicators",
+      "description": "Retrieves the reports from the RSS feed.",
+      "category": "investigation",
+      "annotation": "get_indicators",
+      "enabled": true,
+      "parameters": [
+        {
+          "title": "Feed URL",
+          "description": "Specify the URL of the feed based on which you want to retrieve reports from RSS.",
+          "type": "text",
+          "name": "url",
+          "required": true,
+          "editable": true,
+          "visible": true,
+          "tooltip": "Specify the URL of the feed based on which you want to retrieve reports from RSS."
+        }
+      ],
+      "output_schema": {
+        "bozo": "",
+        "feed": {
+          "link": "",
+          "image": {
+            "href": "",
+            "link": "",
+            "links": [
+              {
+                "rel": "",
+                "href": "",
+                "type": ""
+              }
+            ],
+            "title": "",
+            "title_detail": {
+              "base": "",
+              "type": "",
+              "value": "",
+              "language": ""
+            }
+          },
+          "links": [
+            {
+              "rel": "",
+              "href": "",
+              "type": ""
+            }
+          ],
+          "title": "",
+          "rights": "",
+          "updated": "",
+          "language": "",
+          "subtitle": "",
+          "published": "",
+          "title_detail": {
+            "base": "",
+            "type": "",
+            "value": "",
+            "language": ""
+          },
+          "rights_detail": {
+            "base": "",
+            "type": "",
+            "value": "",
+            "language": ""
+          },
+          "updated_parsed": [],
+          "subtitle_detail": {
+            "base": "",
+            "type": "",
+            "value": "",
+            "language": ""
+          },
+          "published_parsed": []
+        },
+        "href": "",
+        "status": "",
+        "entries": [
+          {
+            "id": "",
+            "link": "",
+            "tags": [
+              {
+                "term": "",
+                "label": "",
+                "scheme": ""
+              }
+            ],
+            "links": [
+              {
+                "rel": "",
+                "href": "",
+                "type": ""
+              }
+            ],
+            "title": "",
+            "author": "",
+            "credit": "",
+            "authors": [
+              {
+                "name": ""
+              }
+            ],
+            "content": [
+              {
+                "base": "",
+                "type": "",
+                "value": "",
+                "language": ""
+              }
+            ],
+            "summary": "",
+            "published": "",
+            "guidislink": "",
+            "media_credit": [
+              {
+                "content": ""
+              }
+            ],
+            "title_detail": {
+              "base": "",
+              "type": "",
+              "value": "",
+              "language": ""
+            },
+            "author_detail": {
+              "name": ""
+            },
+            "media_content": [
+              {
+                "url": "",
+                "width": "",
+                "height": "",
+                "medium": ""
+              }
+            ],
+            "summary_detail": {
+              "base": "",
+              "type": "",
+              "value": "",
+              "language": ""
+            },
+            "published_parsed": []
+          }
+        ],
+        "headers": {
+          "age": "",
+          "via": "",
+          "date": "",
+          "vary": "",
+          "server": "",
+          "x-cache": "",
+          "x-timer": "",
+          "connection": "",
+          "x-served-by": "",
+          "content-type": "",
+          "x-cache-hits": "",
+          "accept-ranges": "",
+          "cache-control": "",
+          "content-length": "",
+          "content-encoding": "",
+          "strict-transport-security": "",
+          "access-control-allow-origin": "",
+          "x-envoy-decorator-operation": "",
+          "access-control-allow-headers": "",
+          "access-control-allow-methods": "",
+          "access-control-expose-headers": "",
+          "x-envoy-upstream-service-time": ""
+        },
+        "version": "",
+        "encoding": "",
+        "namespaces": {
+          "dc": "",
+          "nyt": "",
+          "media": ""
+        }
+      }
+    }
+  ]
+}
