@@ -6,7 +6,7 @@
   "publisher": "Fortinet",
   "cs_approved": true,
   "cs_compatible": true,
-  "help_online": "",
+  "help_online": "https://docs.fortinet.com/document/fortisoar/1.0.0/rss-feed/857/rss-feed-v1-0-0",
   "icon_small_name": "small.png",
   "icon_large_name": "large.png",
   "category": "Threat Intelligence",
@@ -17,7 +17,7 @@
     {
       "operation": "get_indicators",
       "title": "Get Indicators",
-      "description": "Retrieves the reports from the RSS feed.",
+      "description": "Retrieves indicators as an RSS feed based on the feed URL that you have specified.",
       "category": "investigation",
       "annotation": "get_indicators",
       "enabled": true,
