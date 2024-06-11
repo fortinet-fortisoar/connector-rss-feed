@@ -449,20 +449,6 @@
             },
             {
               "@type": "WorkflowStep",
-              "name": "Resolve Range",
-              "description": null,
-              "arguments": {
-                "reputation_resolved": "{{vars.reputation | resolveRange(vars.reputation_map)}}"
-              },
-              "status": null,
-              "top": "300",
-              "left": "300",
-              "stepType": "/api/3/workflow_step_types/04d0cf46-b6a8-42c4-8683-60a7eaa69e8f",
-              "group": null,
-              "uuid": "0b2ea5cd-4c77-462d-8d85-bc06a46e5979"
-            },
-            {
-              "@type": "WorkflowStep",
               "name": "Return Sample Data",
               "description": null,
               "arguments": {
